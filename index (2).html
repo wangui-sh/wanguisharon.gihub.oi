@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kenyatta Health Care provides quality health services with a focus on patient satisfaction and accessibility.">
+    <meta name="keywords" content="health care, medical services, doctors, clinics">
+    <meta name="author" content="Kenyatta Health Care">
+    <title>Kenyatta Health Care</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background: blue;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: lightblue;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        .hero h2 {
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        .hero form input {
+            padding: 10px;
+            margin: 5px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .hero form button {
+            padding: 10px 20px;
+            background: white;
+            color: blue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero form button:hover {
+            background: #e0e0e0;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        /* Section Styles */
+        .services, .doctors, .testimonials, .contact, .video {
+            padding: 50px 20px;
+            background: whitesmoke;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .service-grid, .doctor-grid, .testimonial-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service, .doctor, .testimonial {
+            background: blue;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            width: calc(33% - 20px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        /* Contact Form Styles */
+        .contact form input, .contact form button {
+            width: 300px;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact form button:hover {
+            background: #003d99;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: blue;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-logo {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Video Section */
+        .video h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            float:left;
+        }
+
+        .video video {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid blue;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Kenyatta Health Care</div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Your Health is Our Joy</h1>
+
+        <div class="video-section">
+            <div class="video-container">
+                <!-- Embedded YouTube video using iframe -->
+                <iframe width="560" height="315" src="https://youtu.be/5tDnbilBpCE" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h2>Healthy People 2030 focuses on improving health care quality and ensuring everyone gets the services they need.</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <div class="hero-stats">
+            <div>95% Patient Satisfaction</div>
+            <div>1,500+ Doctors</div>
+            <div>3,000+ Clinics</div>
+            <div>100+ Countries</div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <img src="https://i.pinimg.com/736x/5d/4d/2f/5d4d2feb41c3dcefa2b46970c26bf09d.jpg" alt="Our Services">
+        <h2>Our Best Services</h2>
+        <div class="service-grid">
+            <div class="service">General Medicine</div>
+            <div class="service">Pediatrics</div>
+            <div class="service">Surgery</div>
+            <div class="service">Cardiology</div>
+            <div class="service">Orthopedics</div>
+            <div class="service">Mental Health</div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors">
+        <h2>Our Best Doctors</h2>
+        <img src="https://i.pinimg.com/564x/02/33/34/023334c5b5d31a3b16b804ec395d7daf.jpg" alt="Our Doctors">
+        <div class="doctor-grid">
+            <div class="doctor">Dr. John Waweru</div>
+            <div class="doctor">Dr. Jane Njeri</div>
+            <div class="doctor">Dr. Albert Wambua</div>
+            <div class="doctor">Dr. Emily Nyambu</div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What People Say About Us</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <p>"Amazing service!"</p>
+                <span>- Sarah</span>
+            </div>
+            <div class="testimonial">
+                <p>"Best healthcare experience."</p>
+                <span>- John</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Want to Register Easily?</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit">Submit Form</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">Kenyatta Health Care</div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2024 Kenyatta Health Care. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
